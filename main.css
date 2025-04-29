@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(72, 72, 197);
+    padding-top: 55px;
+    
+    
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* fixa no topo */
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}  
+
+
+.sidebar {
+    width: 250px;
+    background: #ffff;
+    color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2{
+    margin-bottom: 20px;
+
+}
+
+.listas{
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    
+}
+
+.lista-item{
+    background:#0056b3;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.lista-item:hover{
+    background: #004494;
+}
+
+.lista-item span{
+    flex: 1;
+
+}
+
+.lista-actions button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.nova-lista {
+    padding: 10px;
+    background: #28a745;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+}
+
+.nova-lista:hover {
+    background: #218838;
+}
+
+.main {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.main h2 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+.input-tarefa {
+    display: none; /* Começa escondido */
+    flex-direction: row;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.input-tarefa input {
+    flex: 1;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.input-tarefa button {
+    padding: 12px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.input-tarefa button:hover {
+    background: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+li.completed span {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.tarefa-actions button {
+    background: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.confirm {
+    color: #28a745;
+}
+
+.confirm:hover {
+    color: #1c7c31;
+}
+
+.delete {
+    color: #dc3545;
+}
+
+.delete:hover {
+    color: #a71d2a;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: all 0.5s;
+}
+

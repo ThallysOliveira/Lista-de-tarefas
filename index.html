@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    
+    <header>
+        <div class="title">
+            <h2>
+                Lista de Tarefas
+            </h2>
+        </div>
+    </header>
+    
+
+    
+    <div class="sidebar">
+        <h2>
+            Listas
+        </h2>
+        <div class="listas" id="listas"></div>
+        <button class="nova-lista" id="btnNovaLista">+ Nova Lista</button>
+
+    </div>
+    <div class="main">
+        <h2 id="tituloLista">Selecione uma Lista</h2>
+
+        <div class="input-tarefa" id="inputArea">
+            <input type="text"  id="tarefaInput" placeholder="Nova tarefa...">
+            <button id="btnAdicionarTarefa">Adicionar</button>
+        </div>
+        <ul id="tarefas"></ul>
+    </div>
+
+
+    <script src="./main.js"></script>
+</body>
+</html>
